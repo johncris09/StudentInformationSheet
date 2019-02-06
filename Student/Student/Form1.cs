@@ -163,7 +163,68 @@ namespace Student
             int rowindex = dataGridViewStudent.CurrentRow.Index;
             DataGridViewRow row = dataGridViewStudent.Rows[rowindex];
 
+
+
+
+            student_IDTextBox.Text = Convert.ToString(row.Cells["Student_ID"].Value);
+            Last_NameTextBox.Text = Convert.ToString(row.Cells["Last_Name"].Value);
+            first_NameTextBox.Text = Convert.ToString(row.Cells["First_Name"].Value);
+            middle_NameTextBox.Text = Convert.ToString(row.Cells["Middle_Name"].Value);
+            comboSex.Text = Convert.ToString(row.Cells["Sex"].Value);
+            comboAge.Text = Convert.ToString(row.Cells["Age"].Value);
+            mailing_AddressTextBox.Text = Convert.ToString(row.Cells["Mailing_Address"].Value);
+            mailing_Address_Phone_NumberTextBox.Text = Convert.ToString(row.Cells["Mailing_Address_Phone_Number"].Value);
+            cityTextBox.Text = Convert.ToString(row.Cells["City"].Value);
+            city_Phone_NumberTextBox.Text = Convert.ToString(row.Cells["City_Phone_Number"].Value);
+            citizenshipTextBox.Text = Convert.ToString(row.Cells["Citizenship"].Value);
+            religionTextBox.Text = Convert.ToString(row.Cells["Religion"].Value);
             birthDateDateTimePicker.Value = Convert.ToDateTime(row.Cells["BirthDate"].Value);
+            birthPlaceTextBox.Text = Convert.ToString(row.Cells["BirthPlace"].Value);
+            comboStatus.Text = Convert.ToString(row.Cells["Status"].Value);
+            guardians_NameTextBox.Text = Convert.ToString(row.Cells["Guardians_Name"].Value);
+            guardians_Phone_NumberTextBox.Text = Convert.ToString(row.Cells["Guardians_Phone_Number"].Value);
+            parents_NameTextBox.Text = Convert.ToString(row.Cells["Parents_Name"].Value);
+            parents_Phone_NumberTextBox.Text = Convert.ToString(row.Cells["Parents_Phone_Number"].Value);
+            streetTextBox.Text = Convert.ToString(row.Cells["Street"].Value);
+            barangayTextBox.Text = Convert.ToString(row.Cells["Barangay"].Value);
+            city_AddressTextBox.Text = Convert.ToString(row.Cells["City_Address"].Value);
+            provinceTextBox.Text = Convert.ToString(row.Cells["Province"].Value);
+            school_Name_In_ElementaryTextBox.Text = Convert.ToString(row.Cells["School_Name_In_Elementary"].Value);
+            date_Graduated_in_ElementaryDateTimePicker.Value = Convert.ToDateTime(row.Cells["Date_Graduated_in_Elementary"].Value);
+            school_Name_In_SecondaryTextBox.Text = Convert.ToString(row.Cells["School_Name_In_Secondary"].Value);
+            date_Graduated_In_SecondaryDateTimePicker.Value = Convert.ToDateTime(row.Cells["Date_Graduated_In_Secondary"].Value);
+            school_Name_In_CollegeTextBox.Text = Convert.ToString(row.Cells["School_Name_In_College"].Value);
+            date_Graduated_In_CollegeDateTimePicker.Value = Convert.ToDateTime(row.Cells["Date_Graduated_In_College"].Value);
+            school_Name_In_College_Course_TakenTextBox.Text = Convert.ToString(row.Cells["School_Name_In_College_Course_Taken"].Value);
+            date_Graduated_In_Course_TakenDateTimePicker.Value = Convert.ToDateTime(row.Cells["Date_Graduated_In_Course_Taken"].Value);
+            schoolName_1TextBox.Text = Convert.ToString(row.Cells["SchoolName_1"].Value);
+            courseEnrolled_1TextBox.Text = Convert.ToString(row.Cells["CourseEnrolled_1"].Value);
+            semester1TextBox.Text = Convert.ToString(row.Cells["Semester1"].Value);
+            schoolName2TextBox.Text = Convert.ToString(row.Cells["SchoolName2"].Value);
+            courseEnrolled2TextBox.Text = Convert.ToString(row.Cells["CourseEnrolled2"].Value);
+            semester2TextBox.Text = Convert.ToString(row.Cells["Semester2"].Value);
+            schoolName3TextBox.Text = Convert.ToString(row.Cells["SchoolName3"].Value);
+            courseEnrolled3TextBox.Text = Convert.ToString(row.Cells["CourseEnrolled3"].Value);
+            semester3TextBox.Text = Convert.ToString(row.Cells["Semester3"].Value);
+            organizationName1TextBox.Text = Convert.ToString(row.Cells["OrganizationName1"].Value);
+            positionHeld1TextBox.Text = Convert.ToString(row.Cells["PositionHeld1"].Value);
+            term1TextBox.Text = Convert.ToString(row.Cells["Term1"].Value);
+            organizationName2TextBox.Text = Convert.ToString(row.Cells["OrganizationName2"].Value);
+            positionHeld2TextBox.Text = Convert.ToString(row.Cells["PositionHeld2"].Value);
+            term2TextBox.Text = Convert.ToString(row.Cells["Term2"].Value);
+            organizationName3TextBox.Text = Convert.ToString(row.Cells["OrganizationName3"].Value);
+            positionHeld3TextBox.Text = Convert.ToString(row.Cells["PositionHeld3"].Value);
+            term3TextBox.Text = Convert.ToString(row.Cells["Term3"].Value);
+            activityTItle1TextBox.Text = Convert.ToString(row.Cells["ActivityTItle1"].Value);
+            sponsor1TextBox.Text = Convert.ToString(row.Cells["Sponsor1"].Value);
+            inclusiveDate1DateTimePicker.Value = Convert.ToDateTime(row.Cells["InclusiveDate1"].Value);
+            activityTitle2TextBox.Text = Convert.ToString(row.Cells["ActivityTitle2"].Value);
+            sponsor2TextBox.Text = Convert.ToString(row.Cells["Sponsor2"].Value);
+            inclusiveDate2DateTimePicker.Value = Convert.ToDateTime(row.Cells["InclusiveDate2"].Value);
+            activityTitle3TextBox.Text = Convert.ToString(row.Cells["ActivityTitle3"].Value);
+            sponsor3TextBox.Text = Convert.ToString(row.Cells["Sponsor3"].Value);
+            inclusiveDate3DateTimePicker.Value = Convert.ToDateTime(row.Cells["InclusiveDate3"].Value);
+            
 
             
         }
