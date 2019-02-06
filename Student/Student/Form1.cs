@@ -229,6 +229,28 @@ namespace Student
             
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //int count = 0;
+            con.Open();
+            OleDbCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from Student where Last_Name like '%" + textBox1.Text + "%'";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            da.Fill(dt);
+            //count = Convert.ToInt32(dt.Rows.Count.ToString());
+            dataGridViewStudent.DataSource = dt;
+            con.Close();
+            /*
+            if (count == 0)
+            {
+                MessageBox.Show("reocrd not found");
+            }
+             */
+        }
+
 
     }
 }
