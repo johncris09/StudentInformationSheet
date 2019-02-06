@@ -1,0 +1,9 @@
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\bin\Debug\Student.exe
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\bin\Debug\Student.pdb
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\obj\x86\Debug\Student.Form1.resources
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\obj\x86\Debug\Student.Properties.Resources.resources
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\obj\x86\Debug\Student.csproj.GenerateResource.Cache
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\obj\x86\Debug\Student.exe
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\obj\x86\Debug\Student.pdb
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\bin\Debug\Student.accdb
+C:\Users\Via Marie\Downloads\PIT_MANABO\Student\Student\bin\Debug\Student.exe.config
