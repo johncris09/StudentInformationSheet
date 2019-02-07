@@ -63,6 +63,7 @@ namespace Student
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
+           
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -73,6 +74,7 @@ namespace Student
             SelectAll();
             IDGenerator();
             ClearAll();
+              
 
         }
 
@@ -163,7 +165,7 @@ namespace Student
             int rowindex = dataGridViewStudent.CurrentRow.Index;
             DataGridViewRow row = dataGridViewStudent.Rows[rowindex];
 
-
+            buttonSave.Enabled = false;
 
 
             student_IDTextBox.Text = Convert.ToString(row.Cells["Student_ID"].Value);
