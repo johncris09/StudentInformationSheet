@@ -30,6 +30,7 @@ namespace Student
         private void Form1_Load(object sender, EventArgs e)
         {
             SelectAll();
+            buttonUpdate.Hide();
 
             for (int age = 1; age <= 50; age++ )
             {
@@ -140,15 +141,19 @@ namespace Student
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            ClearAll();
-            con.Open();
-            OleDbCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from Student where Student_ID=" + getStudentID();
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Record Dnsedeletedrted Successfully", "Student Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            SelectAll();
+            if (MessageBox.Show("Are you sure you want to delete this record? ", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                ClearAll();
+                con.Open();
+                OleDbCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from Student where Student_ID=" + getStudentID();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Record Deleted Successfully", "Student Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                SelectAll();
+            }
+            
         }
 
         public int getStudentID() {
@@ -164,8 +169,9 @@ namespace Student
         {
             int rowindex = dataGridViewStudent.CurrentRow.Index;
             DataGridViewRow row = dataGridViewStudent.Rows[rowindex];
+            buttonUpdate.Show();
 
-            buttonSave.Enabled = false;
+            buttonSave.Hide();
 
 
             student_IDTextBox.Text = Convert.ToString(row.Cells["Student_ID"].Value);
@@ -266,6 +272,8 @@ namespace Student
             con.Close();
             MessageBox.Show("Record Updated Successfully", "Student Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             SelectAll();
+            buttonUpdate.Hide();
+            buttonSave.Show();
         }
 
 
